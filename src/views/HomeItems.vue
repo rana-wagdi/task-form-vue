@@ -1,5 +1,5 @@
 <template>
-  <div class="header"></div>
+ <header-items></header-items>
   <form action="/" novalidate>
     <component :is="this.stepsList[this.currentStep]"> </component>
     <div v-if="this.currentStep === 0" class="container">
@@ -12,11 +12,13 @@
   </form>
 </template>
 <script>
+import HeaderItems from "@/components/HeaderItems.vue";
 import StepOne from "@/components/StepOne.vue";
 import StepTwo from "@/components/StepTwo.vue";
 
 export default {
   components: {
+  HeaderItems,
     StepOne,
     StepTwo,
   },
@@ -24,7 +26,6 @@ export default {
     return {
       currentStep: 0,
       stepsList: ["StepOne", "StepTwo"],
-      active: false
     };
   },
   methods: {
@@ -48,6 +49,10 @@ export default {
   direction: rtl;
   padding: 0;
   margin: 0;
+}
+@font-face {
+  font-family: 'din-next';
+  src: url();
 }
 .container {
   margin: 0 10rem;

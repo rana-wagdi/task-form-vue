@@ -5,9 +5,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 
-library.add(faCircle)
+library.add(faCircle, faTwitter, faWhatsapp)
 
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(store).mount('#app')
