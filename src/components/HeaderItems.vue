@@ -11,11 +11,11 @@
   </div>
   <nav>
     <div class="nav__items">
-      <div>
+      <div class="logo">
         <img
-          src="https://i.pinimg.com/originals/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg"
-          width="70"
-          height="70"
+          src="https://w7.pngwing.com/pngs/303/549/png-transparent-sport-logo-football-sports-logos-text-sport-logo.png"
+          width="100"
+          height="50"
         />
       </div>
       <div>
@@ -29,19 +29,22 @@
           <li>الاسئله الشائعة</li>
         </ul>
       </div>
-      <div>
+      <div class="search">
         <div>
-          <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+          <font-awesome-icon
+            class="search__icon"
+            icon="fa-solid fa-magnifying-glass"
+          />
         </div>
-        <div>
-        <img
-          src="https://i.pinimg.com/originals/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg"
-          width="70"
-          height="70"
-        />
+        <div class="second_img">
+          <img
+            src="https://w7.pngwing.com/pngs/303/549/png-transparent-sport-logo-football-sports-logos-text-sport-logo.png"
+            width="100"
+            height="50"
+          />
+        </div>
       </div>
-      </div>
-      <div>
+      <div class="login">
         <p>تسجيل الدخول</p>
       </div>
     </div>
@@ -56,6 +59,7 @@
 .social_icons {
   color: #ffffff;
   margin-left: 1rem;
+  cursor: pointer;
 }
 .lang {
   background-color: transparent;
@@ -66,15 +70,54 @@
 .lang option {
   color: black;
 }
-.nav__items{
+.nav__links,
+.search {
   display: flex;
-  justify-content: space-between;
+}
+.nav__items{
+  width:100%;
+  display: grid;
+  grid-template-columns:10% 60% 15% 15%;
 }
 .nav__links {
-  display: flex;
-  
+  margin: 0 2rem;
 }
-.nav__links li{
+.nav__links li {
   list-style: none;
+  margin-left: 1rem;
+  opacity: 0.4;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+.nav__links li:hover {
+  opacity: 0.9;
+}
+.logo {
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.search__icon {
+  border: 1px solid #dddddd;
+  border-top: none;
+  border-bottom: none;
+  padding: 1.6rem;
+  cursor: pointer;
+}
+.second_img {
+  margin: 1rem 1rem;
+}
+.login{
+  display: flex;
+  /* padding: 2rem  1rem; */
+  align-items: center;
+  justify-content: center;
+  background-color:#7dc7e5;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+.login:hover{
+  background-color:#7da3e8;
 }
 </style>
