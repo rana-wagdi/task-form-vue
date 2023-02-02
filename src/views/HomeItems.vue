@@ -55,7 +55,7 @@ export default {
   src: url();
 }
 .container {
-  margin: 0 10rem;
+  margin: 0 5rem;
 }
 .header {
   width: 100%;
@@ -159,6 +159,9 @@ margin: auto;}
   text-align: center;
   width: 100%;
   margin: auto;
+}
+.container{
+  margin: 0 2rem;
 }
 .notes{
 width: 100%;}
